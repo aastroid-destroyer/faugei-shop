@@ -7,33 +7,39 @@
     <title>Flower</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="">
+<body class="bg-gray-50">
     <header class="w-full">
-        <nav class="max-w-[1140px] flex justify-between items-center mx-auto p-4 mb-[120px] mt-8">
+        <nav class="max-w-[1140px] flex items-center justify-between md:items-center mx-auto p-4 mb-[120px] mt-8">
             <img src="assets/logo.png" alt="" class="w-[135px] h-auto">
             <ul class="flex items-center gap-[48px] md:gap-[48px]">
                 <li class="hidden md:block"><a class="font-bold shop" href="">Home</a></li>
                 <li class="hidden md:block"><a href="" class="text-gray-400">Shop</a></li>
                 <li class="hidden md:block"><a href="" class="text-gray-400">About Us</a></li>
-                <li><a href="" class="text-black font-medium">Cart ($56)</a></li>
+                <li><a href="" class="text-black font-medium flex items-center gap-2"> <i
+                            class="fa-solid fa-cart-shopping"></i> Cart ($56)</a>
+                </li>
             </ul>
         </nav>
 
 
-        <section class="mx-auto p-4 w-full max-w-[361px] lg:flex lg:justify-between lg:items-center lg:max-w-[1140px]">
+        <section
+            class="mx-auto w-full max-w-[361px] lg:flex lg:justify-between lg:items-center lg:max-w-[1140px] md:mb-20">
 
             <div class="order-1 w-full mb-6 lg:order-2 lg:mb-0 lg:w-auto">
                 <img src="assets/hero-flower.png" alt="Fresh flowers" class="w-full h-auto">
             </div>
 
             <div class="order-2 w-full lg:order-1 lg:w-[570px]">
-                <h1 class="text-6xl mb-3">
+                <h1 class="text-2xl font-bold md:text-6xl mb-3 font-serif">
                     ALWAYS <span class="text-orange-600">FRESH <br>FLOWERS</span>
                 </h1>
-                <p class="text-2xl text-gray-400">
+                <p class="md:text-2xl text-gray-400">
                     Indulge your senses with the beauty and fragrance of our fresh flower
                     shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers
                     that are perfect for any occasion.
@@ -43,9 +49,9 @@
 
     </header>
     <main class="w-full mx-auto m-0">
-        <section class="md:w-[1140px] md:mx-auto md:mb-16 p-4">
+        <section class="md:w-[1140px] md:mx-auto md:mb-20 p-4">
             <div class="text-center mb-10 md:mb-16 px-4">
-                <h1 class="font-bold text-3xl md:text-5xl">
+                <h1 class="font-bold text-3xl md:text-5xl font-serif">
                     <span class="text-orange-500">Our </span>Plants
                 </h1>
                 <p class="text-gray-500 text-base md:text-2xl max-w-full md:max-w-[888px] mx-auto mt-4">
@@ -54,7 +60,8 @@
                 </p>
             </div>
         </section>
-        <section class="md:w-[1140px] md:mx-auto md:mb-16 grid grid-cols-2 gap-5 lg:grid-cols-4 lg:gap-10  p-4 mb-52">
+        <section
+            class="md:w-[1140px] md:mx-auto md:mb-16 grid grid-cols-2 gap-5 lg:grid-cols-4 lg:gap-10  p-4 md:mb-48">
             <div class="w-full h-[484px]">
                 <img src="assets/sample-flower-image.png" alt="">
                 <div class="p-8">
@@ -121,13 +128,14 @@
             </div>
         </section>
 
-        <section class="md:w-[1140px] md:mx-auto md:mb-16 flex flex-col lg:flex-row items-center gap-23  p-4 mt-16">
+        <section class="md:w-[1140px] md:mx-auto md:mb-16 flex flex-col lg:flex-row items-center gap-23  p-4  md:mt-16">
             <div class="relative flex-shrink-0">
                 <img src="assets/flower-store.png" alt="" class="w-full max-w-[540px] h-auto">
-                <img src="assets/trusted-badge.png" alt="" class="absolute top-[-120px] right-[-120px] w-72 h-72 hidden lg:block">
+                <img src="assets/trusted-badge.png" alt=""
+                    class="absolute top-[-120px] right-[-120px] w-72 h-72 hidden lg:block animate-[spin_15s_linear_infinite]">
             </div>
             <div class="flex flex-col gap-4 max-w-[540px]">
-                <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Flower & Plants <br>Lover</h1>
+                <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-serif">Flower & Plants <br>Lover</h1>
                 <ul class="list-disc marker:text-gray-500 pl-5 mb-3 lg:mb-4">
                     <li class="list-disc marker:text-gray-500 pl-5 mb-4">
                         <p class="text-lg md:text-xl lg:text-2xl text-gray-400">
@@ -144,16 +152,16 @@
                             Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
                             roses to exotic blooms, we offer a wide variety of fresh.</p>
                     </li>
-                    
+
                 </ul>
             </div>
         </section>
 
-        <section class="md:w-[1140px] md:mx-auto md:mb-16  p-4 mb-10">
+        <section class="md:w-[1140px] md:mx-auto md:mb-16  p-4">
             <div class="">
-                <h1 class="text-5xl font-bold text-center mt-16 mb-10 md:mb-4 px-4"><span
+                <h1 class=" text-2xl md:text-5xl font-bold text-center mt-16 md:mb-10 px-4 font-serif"><span
                         class=" text-orange-500">Latest</span> Details</h1>
-                <p class="w-full text-2xl text-center ">Indulge your senses with the beauty and fragrance of our fresh
+                <p class="text-[16px] w-full md:text-2xl text-center text-gray-400">Indulge your senses with the beauty and fragrance of our fresh
                     flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
         </section>
@@ -164,7 +172,7 @@
                     <div class="relative h-[200px] rounded-xl overflow-hidden">
                         <img src="assets/deal-bloom.png" alt="" class="w-full h-full object-cover">
                         <div
-                            class="absolute inset-0 bg-black/30 flex flex-col justify-center px-6 text-white text-center ">
+                            class="absolute inset-0 bg-black/40 flex flex-col justify-center px-6 text-white text-center ">
                             <h2 class="text-base md:text-lg font-semibold">60% Off | Bloom Plant</h2>
                             <a href="" class="mt-1 text-sm underline font-medium">Shop Now</a>
                         </div>
@@ -172,7 +180,7 @@
                     <div class="relative h-[200px] rounded-xl overflow-hidden">
                         <img src="assets/deal-ana.png" alt="" class="w-full h-full object-cover">
                         <div
-                            class="absolute inset-0 bg-black/30 flex flex-col justify-center px-6 text-white text-center ">
+                            class="absolute inset-0 bg-black/40 flex flex-col justify-center px-6 text-white text-center ">
                             <h2 class="text-base md:text-lg font-semibold">30% Off | Ana Plant</h2>
                             <a href="" class="mt-1 text-sm underline font-medium">Shop Now</a>
                         </div>
@@ -181,7 +189,7 @@
                 <div class="relative w-full md:w-2/3 h-[200px] md:h-[423px] rounded-xl overflow-hidden">
                     <img src="assets/deal-zabo.png" alt="" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-center text-white px-4">
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white px-4">
                         <h2 class="text-xl md:text-3xl font-bold">25% Off | Zabo Plant</h2>
                         <a href="" class="mt-2 text-base md:text-lg underline font-semibold">Shop Now</a>
                     </div>
